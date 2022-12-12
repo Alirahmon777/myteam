@@ -56,7 +56,7 @@
   }
 
   &__btn {
-    width: 148px;
-    @include btn(8px, 28px, $white, $darkgreen);
+    width: 145px;
+    @include btn(8px, 24px, $white, $darkgreen);
   }
 }
