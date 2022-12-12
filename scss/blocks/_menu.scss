@@ -56,7 +56,9 @@
   }
 
   &__btn {
-    width: 145px;
-    @include btn(8px, 24px, $white, $darkgreen);
+
+    width: 150px;
+    @include btn(6px, 20px, $white, $darkgreen);
+    text-align: center;
   }
 }
