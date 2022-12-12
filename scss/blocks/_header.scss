@@ -1,5 +1,5 @@
 .header {
-  background-color: #014e56;
+  background-color: $midnightgreen;
   padding: 73px 0 129px;
 
   &__wrapper {
@@ -32,7 +32,7 @@
     @include btn(10px, 33px, $white, $darkgreen);
   }
 
-  &__bar {
+  &__bar, &__menu {
     display: none;
   }
 }
@@ -61,7 +61,7 @@
     }
 
     &__btn {
-      @include btn(6px, 24px, $white, $darkgreen);
+      @include btn(6px, 20px, $white, $darkgreen);
     }
   }
 }
@@ -80,8 +80,9 @@
       display: none;
     }
 
-    &__bar {
+    &__bar, &__menu {
       display: block;
+      cursor: pointer;
     }
   }
 }

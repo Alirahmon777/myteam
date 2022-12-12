@@ -1,0 +1,62 @@
+.header__check,
+.header__none,
+.menu {
+  display: none;
+}
+
+.header__check:checked ~ .menu {
+  display: block;
+}
+
+.menu {
+  position: fixed;
+  z-index: 2;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  padding: 78px 15px 0 48px;
+  background-color: $policeblue;
+  background-image: url(../img/bar-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  &__wrapper{
+    position: relative;
+    padding-top: 44px;
+    padding-right: 33px;
+  }
+
+  &__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 36px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__link {
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    transition: all 0.3s linear;
+    &:hover {
+      color: $lightcoral;
+    }
+  }
+
+  &__btn {
+    width: 148px;
+    @include btn(8px, 28px, $white, $darkgreen);
+  }
+}
