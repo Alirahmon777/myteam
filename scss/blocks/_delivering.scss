@@ -1,0 +1,102 @@
+.delivering {
+  background-image: url(../img/deliver-bg.png),
+    url(../img/deliver-bg-bottom.png);
+  background-repeat: no-repeat;
+  background-position: top left, bottom right;
+  background-color: $junglegreen;
+
+  &__wrapper {
+    padding: 140px 0;
+  }
+
+  &__title {
+    width: 85%;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  &__span {
+    @include span($raptureblue);
+  }
+
+  &__list {
+    margin-top: 62px;
+    position: relative;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+    background-image: url(../img/“.svg);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  &__quote {
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: $white;
+  }
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 28px;
+    text-align: center;
+    color: $raptureblue;
+  }
+
+  &__subtext {
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 18px;
+    text-align: center;
+    color: $white;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .delivering {
+    &__wrapper {
+      padding: 100px 82px;
+    }
+
+    &__title {
+      width: 90%;
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    &__list {
+      flex-direction: column;
+      gap: 48px;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .delivering {
+    &__wrapper {
+        padding: 164px 0;
+    }
+  }
+}

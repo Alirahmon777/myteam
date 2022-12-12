@@ -1,0 +1,69 @@
+.ready {
+  background-image: url(../img/ready-bg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-color: $lightcoral;
+
+  &__wrapper {
+    padding: 76px 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $sacrameto;
+  }
+
+  &__btn {
+    @include btn(9px, 33px, $sacrameto, $white);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .ready {
+    &__title {
+      font-size: 4vw;
+      line-height: 32px;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .ready {
+    &__btn {
+      @include btn(6px, 20px, $sacrameto, $white);
+    }
+  }
+}
+
+@media only screen and (max-width: 615px) {
+  .ready {
+    &__wrapper{
+        padding: 76px 30px;
+    }
+
+    &__title{
+        font-size: 19px;
+    }
+  }
+}
+
+
+@media only screen and (max-width:425px) {
+    .ready{
+        &__wrapper{
+            padding: 83px 24px;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &__title{
+            font-size: 32px;
+            text-align: center;
+        }
+    }
+}

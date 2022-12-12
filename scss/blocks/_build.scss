@@ -1,0 +1,108 @@
+.build {
+  background-color: $sacrameto;
+  background-image: url(../img/build-bg.png);
+  background-repeat: no-repeat;
+  background-position: bottom right;
+
+  &__wrapper {
+    padding: 140px 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 40%;
+  }
+
+  &__miniline {
+    @include miniline($lightcoral);
+    margin-bottom: 54px;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    color: $white;
+  }
+
+  &__list {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  &__subtitle {
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+    color: $lightcoral;
+  }
+
+  &__subdesc {
+    font-size: 15px;
+    line-height: 25px;
+    color: $white;
+    opacity: 0.8;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .build {
+    background-position: top right;
+
+    &__wrapper {
+      padding: 100px 82px;
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 90%;
+      margin-bottom: 64px;
+    }
+
+    &__miniline {
+      margin-bottom: 32px;
+    }
+
+    &__title {
+      font-size: 32px;
+      line-height: 32px;
+    }
+
+    &__list {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .build {
+    &__wrapper {
+      padding: 64px 0;
+    }
+
+    &__content {
+      width: 80%;
+      margin-bottom: 56px;
+    }
+
+    &__item {
+      flex-direction: column;
+    }
+
+    &__subtitle,
+    &__subdesc {
+      text-align: center;
+    }
+  }
+}
